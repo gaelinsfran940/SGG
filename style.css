@@ -1,0 +1,86 @@
+body {
+
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial;
+
+    background: #121212;
+
+}
+
+.card {
+
+    width: 320px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    text-align: center;
+
+}
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    box-sizing: border-box;
+
+}
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #007bff;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.link-text {
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    color: blue;
+
+}
+
+.section {
+
+    display: none;
+
+}
+
+.active {
+
+    display: block;
+
+}
+
+.error {
+
+    color: red;
+
+    margin-top: 10px;
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SGG - Sistema de Gestión de Gastos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="theme-switch-wrapper">
+
+        <label class="theme-switch" for="checkbox">
+
+            <input
+                type="checkbox"
+                id="checkbox"
+                onchange="cambiarTema(this)"
+                aria-label="Cambiar tema">
+
+            <div class="slider">
+
+                <span>☀️</span>
+                <span>🌙</span>
+
+            </div>
+
+        </label>
+
+    </header>
+
+    <main class="card">
+
+        <section id="sec-login" class="section active">
+
+            <h2>Control de Gastos</h2>
+
+            <input type="text" id="login-usuario" placeholder="Usuario">
+
+            <input type="password" id="login-pass" placeholder="Contraseña">
+
+            <button onclick="ejecutarLogin()">
+
+                Entrar
+
+            </button>
+
+            <div class="link-text" onclick="irA('sec-registro')">
+
+                Registrarse
+
+            </div>
+
+        </section>
+
+        <section id="sec-registro" class="section">
+
+            <h2>Registro</h2>
+
+            <input type="text" id="reg-usuario" placeholder="Usuario">
+
+            <input type="password" id="reg-pass" placeholder="Contraseña">
+
+            <button onclick="ejecutarRegistro()">
+
+                Crear Cuenta
+
+            </button>
+
+            <div class="link-text" onclick="irA('sec-login')">
+
+                Volver
+
+            </div>
+
+        </section>
+
+        <section id="sec-dashboard" class="section">
+
+            <h2>Ingreso Exitoso</h2>
+
+            <div id="welcome-message"></div>
+
+            <button onclick="irA('sec-login')">
+
+                Cerrar Sesión
+
+            </button>
+
+        </section>
+
+        <div id="msg-error" class="error"></div>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
